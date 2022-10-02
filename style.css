@@ -1,0 +1,173 @@
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header nav .nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+header nav .nav-links .nav-brand a {
+  padding: 0.7rem;
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+  background-color: #000;
+  padding-top: 0.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+header nav .nav-links .nav-items ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav .nav-links .nav-items ul li a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+}
+
+header nav .nav-links .nav-items ul li a:hover {
+  text-decoration: underline;
+}
+
+/* styling the the breadcrumbs section */
+header .breadcrumbs ul {
+  display: flex;
+  list-style: none;
+}
+
+header .breadcrumbs ul li a {
+  margin: 0 0.7rem;
+  text-decoration: none;
+  color: #000;
+}
+
+/* style section price */
+
+main section.good-price {
+  margin: 2.5rem;
+}
+
+main section.good-price .text {
+  width: 70%;
+}
+
+/* style all cards*/
+main section.all-products {
+  margin: 2.5rem;
+}
+
+main section.all-products .cards {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+main section.all-products .card {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+main section.all-products .card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+main section.all-products .cards .card-text-rap {
+  text-transform: uppercase;
+  color: grey;
+}
+
+main section.all-products .cards .card-price {
+  font-size: 1.3rem;
+}
+
+main section.all-products .cards .card-price::first-letter {
+  text-transform: uppercase;
+}
+
+main section.all-products .cards .card-saving {
+  color: green;
+}
+
+@media (max-width: 567px) and (max-width: 768px) {
+  main section.all-products .cards {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 567px) {
+  main section.all-products .cards {
+    width: calc(100% - 10px);
+  }
+}
+
+@media (max-width: 667px) {
+    header nav .nav-links {
+        display: block;
+    }
+
+    header nav .nav-links .nav-brand{
+        background-color: black;
+        border-radius: 0.9rem;
+        width: 80%;
+    }
+
+    header nav .nav-links .nav-brand a {
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+    }
+
+    header nav .nav-links .nav-items ul {
+        display: block;
+        list-style: none;
+        padding: 0.5rem 0;
+        margin-top: 1.3rem;
+    }
+
+    header nav .nav-links .nav-items ul li {
+        margin-bottom: 10px;
+        background-color: black;
+        padding: 5px;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+        width: 60%;
+}
+
+    header nav .nav-links .nav-items ul li a {
+        color: #fff;
+        padding: 5px;
+    }
+    main section.good-price .text {
+        width: 100%;
+    }
+}
